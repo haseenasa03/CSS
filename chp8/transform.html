@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .container{
+        background-color: aqua;
+      }
+      .box{
+        background-color: blue;
+        /* transform:matrix(1,2,3,4,5,6); */
+        /* transform:translate(134px,56px) rotateX(45deg); */
+        /* transform:rotate(0.5turn); */
+        /* transform:translate(134px,56px); */
+        /* transform-origin:center; */
+        /* transform:scale(4,7); */
+        /* transform:skew(4,6); */
+        /* transform:scaleX(8); */
+        /* transform:skew(10deg,10deg); */
+        
+      }
+      img{
+        width:146px;
+        height:455px;
+        /* transition-property:width; */
+        /* transition-duration: 1s; */
+        /* transition-timing-function: ease-in; */
+        /* transition-delay:3s; */
+        transition:width 1s ease-in-out height 4s 
+      }
+    </style>
+   
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img id="myImage" src="https://source.unsplash.com/960x520/?nature,water"> 
+            <button id="btn">Toggle</button>
+    </div>
+</body>
+<script>
+  myImgae.style.width='146px';
+  myImage.style.height='16px';
+    btn.addEventListener("click",()=>{
+        if(myImage.sttyle.width==='456px'){ 
+          myImage.style.width='146px';
+        }
+        else if(myImage.style.width==='146px')
+        {
+          myImage.style.width="546px";
+        }
+    })
+</script>
+</html>
